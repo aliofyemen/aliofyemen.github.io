@@ -1,0 +1,19 @@
+<section class="section_projects">
+  <div class="section_title">Projects</div>
+  <div class="section_content">
+  	
+  	{% for project in site.data.projects %}
+  	<div class="card">
+  		<div class="header">
+    		
+  		</div>
+  		<div class="container">
+    		<img class="icon" src={{ site.baseurl }}{{ project.icon }}/>
+        <h4>{{ project.title }}</h4>
+    		<h5>{{ project.description }}</h5>
+  		</div>
+  	</div>
+  	{% endfor %}
+
+  </div>
+</section>

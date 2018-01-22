@@ -1,0 +1,32 @@
+- title: Kitab Epub, PDF & Manga Reader
+  url: blablabla
+  code: blablabla
+  icon: /img/project.png
+  description: A beautifully designed all in one solution for your reading needs.
+  tech:
+    - item: Android Framework
+    - item: Java
+    - item: JSON
+    - item: Realm
+    - item: OkHttp
+    - item: ButterKnife
+
+- title: RFID-Operated Door Lock
+  url: blablabla
+  code: blablabla
+  icon: /img/project.png
+  description: A door lock that is operated by an RFID tag or card.
+  tech:
+    - item: Arduino Framework
+    - item: C++
+
+- title: Personal Webpage
+  url: blablabla
+  code: blablabla
+  icon: /img/project.png
+  description: The same webpage you are viewing right now.
+  tech:
+    - item: Jekyll
+    - item: JavaScript
+    - item: HTML
+    - item: CSS

@@ -1,0 +1,26 @@
+- category: Languages
+  list:
+    - item: Java
+    - item: C++/C
+    - item: JavaScript
+    - item: Python
+    - item: SQL
+    - item: YAML
+    - item: JSON
+
+
+- category: Frameworks
+  list:
+    - item: Android
+    - item: Jekyll
+    - item: Arduino
+
+- category: Tools
+  list:
+    - item: Git & Github
+    - item: Bash
+    - item: Android Studio
+    - item: IntelliJ IDEA
+    - item: Sublime Text 3
+    - item: Vim
+    - item: MySQL Workbench

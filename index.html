@@ -1,85 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: home
+---
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="./css/stylesheet.css" rel="stylesheet">
-
-    <title>Welcome!</title>
-  </head>
-  
-  <body>
-     
-    <div class="site-wrapper">
-     
-      <!-- Fixed navbar -->
-      <nav>
-        <div class="nav nav-pills" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-          <a class="nav-item nav-link" id="nav-blog-tab" data-toggle="tab" href="#nav-blog" role="tab" aria-controls="nav-blog" aria-selected="false">Blog</a>
-          <a class="nav-item nav-link" id="nav-portfolio-tab" data-toggle="tab" href="#nav-portfolio" role="tab" aria-controls="nav-portfolio" aria-selected="false">Portfolio</a>
-        </div>
-      </nav>
-      
-      <div class="tab-content" id="nav-tabContent">
-          <!-- HOME -->
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> 
-            <p>[UNDER CONSTRUCTION]</p>
-            <p style="font-size: 30px">Ali Morshid<span style="color: #F92672;">.</span></p>
-            <div>
-                <img src="./images/profile.jpg" class="rounded-circle" id="profile-img" data-trigger="hover" data-toggle="popover" data-content="Hello!"/>
-            </div>
-            <div id="scramble"></div>
-          </div>
-          <!-- BLOG -->
-          <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab">
-            <div class="card" style="width: 18rem; margin: auto;">
-              <img class="card-img-top" src="./images/ali.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <!-- PORTFOLIO -->
-          <div class="tab-pane fade" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
-            <div class="card text-white bg-warning mb-3" style="max-width: 18rem; margin: auto;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Warning card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-     
-      <footer class="footer">
-          <p id="footer-para">
-             Made with <img src="./images/heart.png" style="width: 15px; height: 15px;"/> using the finest ingredients. Find me on <a href="https://github.com/noneisnull">Github</a> or <a href="https://twitter.com/aliofyemen">Twitter</a>
-          </p>        
-      </footer>
-      
-    </div>
-
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
-    <!-- Scrambler Effect -->
-    <script type="text/javascript" src="./js/scrambler.js"></script>
-    <script>
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-    </script>
-
-  </body>
-</html>
+<div class="site">
+	{% include profile.html %}
+	<br><br>
+	{% include background.html %}
+	<br><br>
+	{% include projects.html %}
+	<br><br>
+	{% include skills.html %}
+	<br><br>
+	{% include footer.html %}
+</div>
