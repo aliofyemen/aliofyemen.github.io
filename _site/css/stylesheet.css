@@ -121,29 +121,26 @@ h4 {
 .card {
 	display: inline-block;
 	vertical-align: top;
+	border-top: 2px solid #A6E22E;
+	height: 300px;
 	width: 250px;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 10px;
+  	padding: 10px;
   	text-align: center;
-  	margin: 10px;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header {
-	background-color: #A6E22E;
-    color: white;
-    font-size: 1rem;
-    padding: 1px;
+	height: 150px;
 }
 
 .container {
-	background-color: #272822;
-    color: white;
-    padding: 10px;
-    height: 300px;
+    overflow: hidden;
 }
 
 .icon {
-	height: 10vh;
-	width: 10vh;
+	height: 64px;
+	width: 64px;
 }
 
 /*
