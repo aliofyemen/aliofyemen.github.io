@@ -5,6 +5,8 @@
     - item: JavaScript
     - item: Python
     - item: SQL
+    - item: HTML
+    - item: CSS
     - item: YAML
     - item: JSON
 
@@ -19,8 +21,19 @@
   list:
     - item: Git & Github
     - item: Bash
-    - item: Android Studio
-    - item: IntelliJ IDEA
     - item: Sublime Text 3
     - item: Vim
     - item: MySQL Workbench
+
+- category: IDEs
+  list:
+    - item: Android Studio
+    - item: IntelliJ IDEA
+    - item: Visual Studio
+    - item: NetBeans
+
+- category: Platforms
+  list:
+    - item: Linux (Main)
+    - item: Windows
+    - item: macOS
