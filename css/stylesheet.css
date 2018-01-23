@@ -104,43 +104,74 @@ h4 {
 /*
 	PROFILE
 */
+.profile_card {
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: auto;
+	max-width: 500px;
+	max-height: 300px;
+	border-top: 2px solid #A6E22E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.image_section {
+	flex-grow: 1;
+	padding: 10px;
+}
+
+.snippet_section {
+	flex-grow: 3;
+	padding: 10px;
+}
 
 .profile_image {
 	display: block;
-	height: 30vh;
-	width: 30vh;
-	margin: auto;
+	margin: 0 auto;
+	max-height: 128px;
+	max-width: 128px;
 	border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 
 /* 
 	PORTFOLIO
 */
 
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .card {
-	display: inline-block;
-	vertical-align: top;
-	border-top: 2px solid #A6E22E;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 	height: 300px;
 	width: 250px;
 	margin: 10px;
   	padding: 10px;
-  	text-align: center;
+  	border-top: 2px solid #A6E22E;
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header {
-	height: 150px;
+	text-align: center;
+	margin: 0;
 }
 
 .container {
     overflow: hidden;
+    text-align: center;
+    margin: auto;
 }
 
 .icon {
-	height: 64px;
-	width: 64px;
+	max-height: 64px;
+	max-width: 64px;
 }
 
 /*

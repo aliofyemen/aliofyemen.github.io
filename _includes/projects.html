@@ -2,17 +2,19 @@
   <div class="section_title">Projects</div>
   <div class="section_content">
   	
-  	{% for project in site.data.projects %}
-  	<div class="card">
-  		<div class="header">
-    		<img class="icon" src="{{ site.baseurl }}{{ project.icon }}"/>
-        <h4>{{ project.title }}</h4>
-  		</div>
-  		<div class="container">
-    		<h5>{{ project.description }}</h5>
-  		</div>
-  	</div>
-  	{% endfor %}
+  	<div class="grid">
+      {% for project in site.data.projects %}
+    	<div class="card">
+    		<div class="header">
+      		<img class="icon" src="{{ site.baseurl }}{{ project.icon }}"/><br>
+          <strong>{{ project.title }}</strong>
+    		</div>
+    		<div class="container">
+      		<small>{{ project.description }}</small>
+    		</div>
+    	</div>
+    	{% endfor %}
+    </div>
 
   </div>
 </section>
