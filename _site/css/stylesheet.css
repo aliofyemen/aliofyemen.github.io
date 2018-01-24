@@ -13,6 +13,11 @@
 	#FD971F
 */
 
+/*
+	import code highlighting theme
+*/
+@import url(monokai.css);
+
 /* BASIC FORMAT*/
 html,
 body {
@@ -64,11 +69,13 @@ code {
 }
 
 pre code {
+	display: block;
+	font-size: 100%;
+	overflow: scroll;
+	padding: 20px;
 	color: #fff;
 	background-color: #272822; 
 	border: 1px solid #999;
-	display: block;
-	padding: 20px;
 }
 
 
