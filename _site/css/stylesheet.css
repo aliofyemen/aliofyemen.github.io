@@ -58,10 +58,28 @@ p {
 	font-size: smaller;
 }
 
+code { 
+	color: #000;
+	background-color: #A6E22E;
+}
+
+pre code {
+	color: #fff;
+	background-color: #272822; 
+	border: 1px solid #999;
+	display: block;
+	padding: 20px;
+}
+
+
 h4 {
 	color: #A6E22E; 
 }
 
+mark {
+	color: #000;
+	background-color: #A6E22E;
+}
 
 .pulsate {
     -webkit-animation: pulsate 3s ease-out;
