@@ -3,11 +3,19 @@ layout: blog
 ---
 
 <div class="blog">
-	{% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  	{% endfor %}
+	<div class="grid">
+		{% for post in site.posts %}
+	    <div class="blog_card">
+	    	<div class="title_section">
+	    		<strong>{{ post.title }}</strong>
+	    	</div>
+	    	<div class="excerpt_section">
+	    		{{ post.excerpt }}<br>
+	    		<a href="{{ post.url }}">read more..</a>
+	    	</div>
+	    </div>
+	  	{% endfor %}
+  	</div>
   	<br>
   	{% include footer.html %}
 </div>

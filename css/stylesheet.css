@@ -124,7 +124,28 @@ mark {
 
 }
 
+/*
+	BLOG
+*/
+.blog_card {
+	display: flex;
+	flex: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	margin: 20px auto;
+	width: 400px;
+	border-top: 2px solid #F92672;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.title_section{
+	font-size: larger;
+	padding: 10px;
+}
+.excerpt_section {
+	padding: 10px;
+}
 /*
 	PROFILE
 */
@@ -135,8 +156,8 @@ mark {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	max-width: 400px;
-	max-height: 300px;
+	font-size: larger;
+	max-width: 85%;
 	border-top: 2px solid #A6E22E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -168,9 +189,9 @@ mark {
 
 .grid {
 	display: flex;
+	flex: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
 }
 
 .card {
