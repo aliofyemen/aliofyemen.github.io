@@ -55,6 +55,7 @@ a:active {
 
 
 blockquote {
+	margin-top: 0;
 	text-align: justify;
     text-justify: inter-word;
 	border-left: 2.5px solid #66D9EF;
