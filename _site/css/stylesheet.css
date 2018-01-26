@@ -54,13 +54,10 @@ a:active {
 }
 
 
-
-p {
+blockquote {
+	text-align: justify;
+    text-justify: inter-word;
 	border-left: 2.5px solid #66D9EF;
-	padding-left: 1%;
-	padding-top:0;
-	margin-top:0;
-	font-size: smaller;
 }
 
 code { 
@@ -116,17 +113,17 @@ mark {
 
 .section_content {
 	border-left: 5px solid #F92672;
-	margin: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 15%;
-	padding-right: 15%;
-
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 /*
 	BLOG
 */
+.blog {
+	padding-left: 10%;
+	padding-right: 10%;
+}
 .blog_card {
 	display: flex;
 	flex: column;
@@ -157,7 +154,7 @@ mark {
 	align-items: center;
 	margin: auto;
 	font-size: larger;
-	max-width: 85%;
+	max-width: 60%;
 	border-top: 2px solid #A6E22E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -181,6 +178,13 @@ mark {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.social {
+	height: 50px;
+	max-width: 40%;
+	margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 
 /* 
@@ -189,9 +193,10 @@ mark {
 
 .grid {
 	display: flex;
-	flex: row;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: baseline;
 }
 
 .card {
@@ -228,8 +233,6 @@ mark {
 
 
 .skills {
-	vertical-align: top;
-	display: inline-block;
 	margin: 20px;
 }
 
@@ -262,4 +265,28 @@ footer {
     50% { top: -0.2em; }
     70% { top: -0.3em; }
     100% { top: 0; }
+}
+
+/*
+	MOBILE
+*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    blockquote {
+        text-align: left;
+        font-size: smaller;
+    }
+
+    .section_content {
+    	padding:1%;
+    }
+
+    .profile_card {
+    	max-width: 85%;
+    }
+
+    .grid {
+    	flex-direction: column;
+    }
 }

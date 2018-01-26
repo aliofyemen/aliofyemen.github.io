@@ -2,13 +2,15 @@
   <div class="section_title">Skills</div>
   <div class="section_content">
     
-    {% for entry in site.data.skills %}
-    <div class="skills">
-    	<h4>{{ entry.category }}</h4>
-    	{% for list in entry.list %}
-    		<small> {{ list.item }} </small><br>
-    	{% endfor %}
- 	  </div>
-    {% endfor %}
+    <div class="grid">
+      {% for entry in site.data.skills %}
+      <div class="skills">
+      	<h4>{{ entry.category }}</h4>
+      	{% for list in entry.list %}
+      		<small> {{ list.item }} </small><br>
+      	{% endfor %}
+    	  </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
