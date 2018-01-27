@@ -1,7 +1,6 @@
 <section class="section_skills">
   <div class="section_title">Skills</div>
   <div class="section_content">
-    
     <div class="grid">
       {% for entry in site.data.skills %}
       <div class="skills">
@@ -9,7 +8,7 @@
       	{% for list in entry.list %}
       		<small> {{ list.item }} </small><br>
       	{% endfor %}
-    	  </div>
+   	  </div>
       {% endfor %}
     </div>
   </div>

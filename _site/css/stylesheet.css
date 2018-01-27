@@ -58,6 +58,7 @@ blockquote {
 	margin-top: 0;
 	text-align: justify;
     text-justify: inter-word;
+    padding-left: 2%;
 	border-left: 2.5px solid #66D9EF;
 }
 
@@ -186,8 +187,13 @@ mark {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*
+	BACKGROUND
+*/
 
-
+.employment {
+	text-align: center;
+}
 /* 
 	PORTFOLIO
 */
@@ -232,10 +238,6 @@ mark {
 	SKILLS
 */
 
-
-.skills {
-	margin: 20px;
-}
 
 /*
 	FOOTER
@@ -289,5 +291,11 @@ footer {
 
     .grid {
     	flex-direction: column;
+		justify-content: center;
+		align-items: center;
     }
+
+    .skills {
+		text-align: center;
+	}
 }
