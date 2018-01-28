@@ -147,9 +147,23 @@ mark {
 .excerpt_section {
 	padding: 10px;
 }
+
+.title {
+	font-family: 'Bungee Shade', cursive;
+}
 /*
 	PROFILE
 */
+
+#name {
+	margin: 0;
+	text-align: center;
+}
+
+#subtitle {
+	text-align: center;
+}
+
 .profile_container {	
 	display: flex;
 	flex-direction: column;
@@ -237,7 +251,7 @@ mark {
 	width: 250px;
 	margin: 10px;
   	padding: 10px;
-  	border-top: 2px solid #A6E22E;
+  	border-top: 2px solid #F92672;
   	border-radius: 5px 5px 0 0;
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -247,7 +261,7 @@ mark {
 	margin: auto;
 }
 
-.container {
+.description {
     overflow: hidden;
     text-align: center;
     margin: auto;
@@ -274,14 +288,10 @@ footer {
 	font-family: 'Bungee Shade', cursive;
    	font-weight: bold;
 	color: #F92672;
-   	background-color: #272822;
-
+   	background-color: #242620;
+   	border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-#heart {
-	height: 20px;
-	width: 20px;
-}
 
 .bounce {
 	display: inline-block;
@@ -309,7 +319,7 @@ footer {
     }
 
     .section_content {
-    	padding:1%;
+    	padding:0;
     }
 
     .profile_card {
@@ -330,3 +340,8 @@ footer {
 		text-align: center;
 	}
 }
+
+
+/*
+	TEST
+*/
