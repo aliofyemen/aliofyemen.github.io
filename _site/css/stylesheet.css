@@ -240,13 +240,14 @@ mark {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: baseline;
+	align-items: top;
 }
 
 .card {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	vertical-align: top;
 	height: 300px;
 	width: 250px;
 	margin: 10px;
