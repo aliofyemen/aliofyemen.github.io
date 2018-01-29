@@ -34,6 +34,18 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
+.home_style {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative; 
+}
+
+.blog_style {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative; 
+}
+
 
 a {
   color: #A6E22E;
@@ -57,7 +69,7 @@ a:active {
 blockquote {
 	margin-top: 0;
 	text-align: justify;
-    text-justify: inter-word;
+    text-justify: newspaper;
     padding-left: 2%;
 	border-left: 2.5px solid #66D9EF;
 }
@@ -283,6 +295,7 @@ mark {
 */
 
 footer {
+	position: end;
 	padding: 20px;
   	text-align: center;
   	font-size: smaller;
@@ -315,7 +328,7 @@ footer {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     blockquote {
-        text-align: left;
+        /*text-align: left;*/
         font-size: smaller;
     }
 
