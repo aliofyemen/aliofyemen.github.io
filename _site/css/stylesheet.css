@@ -282,6 +282,11 @@ mark {
 	max-width: 64px;
 }
 
+#project_title {
+	color: #66D9EF;
+	font-family: 'Bungee Outline', cursive;
+}
+
 /*
 	SKILLS
 */
