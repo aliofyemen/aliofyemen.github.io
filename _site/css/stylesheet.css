@@ -24,13 +24,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #272822;
-  font-family: 'Didact Gothic', sans-serif;
-  font-size: x-large;
-}
-
-body {
   color: #fff;
+  background-color: #272822;
+  font-family: 'Zilla Slab', serif;
+  font-size: x-large;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -41,6 +38,16 @@ body {
 }
 
 .blog_style {
+	text-align: center;
+	font-size: larger;
+	min-width: 100%;
+	min-height: 100%;
+	position: relative; 
+}
+
+.credits_style {
+	text-align: center;
+	font-size: larger;
 	min-width: 100%;
 	min-height: 100%;
 	position: relative; 
@@ -136,29 +143,19 @@ mark {
 /*
 	BLOG
 */
-.blog {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-.blog_card {
-	display: flex;
-	flex: column;
-	flex-wrap: wrap;
-	justify-content: left;
-	align-items: center;
-	margin: 20px auto;
-	width: 400px;
-	border-top: 2px solid #F92672;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.blog_post {
+	text-align: left;
 }
 
-.title_section{
-	font-size: larger;
-	padding: 10px;
+#blog_title {
+	color: white;
 }
-.excerpt_section {
-	padding: 10px;
+
+#date {
+	color: gray;
 }
+
 
 .title {
 	font-family: 'Bungee Shade', cursive;
@@ -306,6 +303,12 @@ footer {
    	border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+#copyright {
+	font-family: 'Zilla Slab', serif;
+  	font-size: medium;
+ 	color: gray;
+}
+
 
 .bounce {
 	display: inline-block;
@@ -328,7 +331,7 @@ footer {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     blockquote {
-        /*text-align: left;*/
+        text-align: center;
         font-size: smaller;
     }
 
@@ -352,6 +355,10 @@ footer {
 
     .skills {
 		text-align: center;
+	}
+
+	.blog_style {
+		text-align: left;
 	}
 }
 

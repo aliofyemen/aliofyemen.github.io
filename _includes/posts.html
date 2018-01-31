@@ -1,13 +1,14 @@
-<div class="grid">
-	{% for post in site.posts %}
-	<div class="blog_card">
-		<div class="title_section">
-			<strong>{{ post.title }}</strong>
-		</div>
-		<div class="excerpt_section">
-			{{ post.excerpt }}<br>
-			<a href="{{ post.url }}">read more..</a>
-		</div>
-	</div>
-	{% endfor %}
-</div>
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h3 class="section_title">{{ currentdate }}</h3>
+    <ul>
+    {% assign date = currentdate %}
+  {% endif %}
+    <p>
+    	<a id="blog_title" href="{{ post.url }}">{{ post.title }}</a> 
+    	<small id="date">{{ post.date | date: "%-m/%-d/%Y" }}</small><br>
+    </p>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

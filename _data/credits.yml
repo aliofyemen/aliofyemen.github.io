@@ -1,3 +1,14 @@
-- title: Dusk Icon Set
-  author: icons8
-  url: https://icons8.com/icon/set/html/dusk
+- name: Bungee Shade
+  author: David Jonathan Ross
+  category: Font
+  url: https://fonts.google.com/specimen/Bungee+Shade
+
+- name: Zilla Slab
+  author: Typotheque
+  category: Font
+  url: https://fonts.google.com/specimen/Zilla+Slab
+
+- name: Pulsating Text
+  author: Kevin Leary
+  category: CSS
+  url: https://www.kevinleary.net/pulsating-css3-animations/
