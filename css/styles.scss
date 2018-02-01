@@ -191,7 +191,6 @@ footer {
  */
 
 .home_style {
-	min-width: 100%;
 	min-height: 100%;
 	position: relative; 
 }
@@ -259,7 +258,6 @@ footer {
 .blog_style {
 	text-align: center;
 	font-size: larger;
-	min-width: 100%;
 	min-height: 100%;
 	position: relative; 
 }
@@ -271,6 +269,12 @@ footer {
 #blog_date {
 	font-size: x-large;
 	color: gray;
+}
+
+.post_style {
+	padding: 10%;
+	min-height: 100%;
+	position: relative; 
 }
 
 /* 
@@ -316,6 +320,15 @@ footer {
 
 	.blog_style {
 		text-align: left;
+	}
+
+	.post_style {
+		padding: 5%;
+	}
+
+	pre code {
+		padding: 1%;
+		font-size: small;
 	}
 }
 
