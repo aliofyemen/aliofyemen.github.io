@@ -36,15 +36,17 @@ body {
 a {
   color: #A6E22E;
   text-decoration: none; }
-  a hover {
-    color: #fff; }
-  a active {
-    color: #FD971F; }
+
+a::hover {
+  color: #fff; }
+
+a::active {
+  color: #FD971F; }
 
 blockquote {
   margin-top: 0;
   text-align: justify;
-  text-justify: newspaper;
+  text-justify: inter-word;
   padding-left: 2%;
   border-left: 2.5px solid #66D9EF; }
 

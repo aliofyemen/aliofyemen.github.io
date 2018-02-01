@@ -72,20 +72,20 @@ body {
 a {
 	color: $neon-green;
   	text-decoration: none;
+}
 
-  	hover {
+a::hover {
   		color: #fff;
   	}
 
-  	active {
-  		color: $neon-orange;
-  	}
+a::active {
+	color: $neon-orange;
 }
 
 blockquote {
 	margin-top: 0;
 	text-align: justify;
-    text-justify: newspaper;
+    text-justify: inter-word;
     padding-left: 2%;
 	border-left: $secondary-border;
 }
