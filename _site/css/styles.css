@@ -140,7 +140,10 @@ footer {
   text-align: center; }
 
 #name {
-  font-family: "Bungee Shade", cursive; }
+  font-family: "Bungee Shade", cursive;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #fff; }
 
 .bouncy_link {
   font-family: "Bungee Shade", cursive;
@@ -213,8 +216,7 @@ footer {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   blockquote {
-    text-align: center;
-    font-size: smaller; }
+    text-align: center; }
 
   .section_content {
     padding: 0; }
@@ -223,6 +225,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+
+  .card_header {
+    font-family: "Zilla Slab", serif;
+    font-weight: bold; }
 
   .skills {
     text-align: center; }

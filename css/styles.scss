@@ -202,6 +202,9 @@ footer {
 
 #name {
 	font-family: $title-font;
+	font-size: $title-font-size;
+	font-weight: bold;
+	color: #fff;
 }
 
 .bouncy_link {
@@ -289,7 +292,7 @@ footer {
     /* For mobile phones: */
     blockquote {
         text-align: center;
-        font-size: smaller;
+        // font-size: smaller;
     }
 
     .section_content {
@@ -300,6 +303,11 @@ footer {
     	flex-direction: column;
 		justify-content: center;
 		align-items: center;
+    }
+
+    .card_header {
+    	font-family: $primary-font;
+		font-weight: bold;
     }
 
     .skills {
