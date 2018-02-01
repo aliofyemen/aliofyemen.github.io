@@ -95,7 +95,7 @@ code, mark {
 	background-color: $neon-green;
 }
 
-pre code {
+pre > code {
 	display: block;
 	overflow: scroll;
 	padding: 10px;
@@ -272,7 +272,8 @@ footer {
 }
 
 .post_style {
-	padding: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 	min-height: 100%;
 	position: relative; 
 }
@@ -323,11 +324,16 @@ footer {
 	}
 
 	.post_style {
-		padding: 5%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
-	pre code {
+	pre > code {
 		padding: 1%;
+		font-size: medium;
+	}
+
+	footer {
 		font-size: small;
 	}
 }
