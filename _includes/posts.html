@@ -8,7 +8,7 @@
   {% endif %}
     <p>
     	<a id="blog_title" href="{{ post.url }}">{{ post.title }}</a> 
-    	<small id="date">{{ post.date | date: "%-m/%-d/%Y" }}</small><br>
+    	<span id="blog_date">{{ post.date | date: "%-m/%-d/%Y" }}</span><br>
     </p>
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}

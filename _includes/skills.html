@@ -4,7 +4,7 @@
     <div class="grid">
       {% for entry in site.data.skills %}
       <div class="skills">
-      	<h4 class="title">{{ entry.category }}</h4>
+      	<h4 class="section_subtitle">{{ entry.category }}</h4>
       	{% for list in entry.list %}
       		<small> {{ list.item }} </small><br>
       	{% endfor %}
