@@ -1,6 +1,6 @@
 <footer>
   <div>
-  	Made with love using the finest ingredients. <br>
+  	<strong>Made with love using the finest ingredients.</strong> <br>
 	<a href="mailto:alimorsh@buffalo.edu" target="_top">
 	<small class="bounce">contact</small>
 	</a>
@@ -10,10 +10,12 @@
 	</a>
 	<br>
   	<small id="copyright">&copy;{{ 'now' | date: "%Y" }} ALI MORSHID</small>
-  	<div>
+  	{% if jekyll.environment == "development" %}
+    <div>
   		<img src="{{ site.baseurl }}/img/g.svg" />
   		<img src="{{ site.baseurl }}/img/t.svg" />
   		<img src="{{ site.baseurl }}/img/i.svg" />
   	</div>
+    {% endif %}
   </div>
 </footer>

@@ -40,7 +40,7 @@ body {
   background: #66D9EF; }
 
 ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner {
-  background: #242620; }
+  background: #383428; }
 
 /* 
 	ELEMENTS
@@ -75,8 +75,8 @@ pre > code {
   padding: 0;
   font-size: 100%;
   color: #fff;
-  background-color: #272822;
-  box-shadow: 1px 1px 1px #fff; }
+  background-color: #383428;
+  box-shadow: 3px 3px 3px #000; }
 
 footer {
   position: end;
@@ -244,6 +244,8 @@ footer {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   blockquote {
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center; }
 
   .section_content {

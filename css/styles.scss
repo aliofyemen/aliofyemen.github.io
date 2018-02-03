@@ -12,7 +12,8 @@
  */
 
 $graphite: #242620;
-$darker-graphite:  #272822;
+$light-graphite:  #272822;
+$lighter-graphite: #383428;
 $neon-pink: #F92672;
 $neon-blue: #66D9EF;
 $neon-green: #A6E22E;
@@ -78,7 +79,7 @@ body {
 }
 
 ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner {
-	background: $graphite;
+	background: $lighter-graphite; 
 }
 
 /* 
@@ -120,8 +121,8 @@ pre > code {
 	padding: 0;
 	font-size: 100%;
 	color: #fff;
-	background-color: $darker-graphite; 
-	box-shadow: 1px 1px 1px #fff;
+	background-color: $lighter-graphite; 
+	box-shadow: 3px 3px 3px #000;
 }
 
 footer {
@@ -132,7 +133,7 @@ footer {
 	font-family: $title-font;
    	font-weight: bold;
 	color: $neon-pink;
-   	background-color: $darker-graphite;
+   	background-color: $light-graphite;
    	border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -326,8 +327,9 @@ footer {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     blockquote {
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
-        // font-size: smaller;
     }
 
     .section_content {
