@@ -103,9 +103,10 @@ a:active {
 
 blockquote {
 	margin-top: 0;
-	text-align: justify;
-    text-justify: inter-word;
     padding-left: 2%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: larger;
 	border-left: $secondary-border;
 }
 
@@ -135,6 +136,14 @@ footer {
 	color: $neon-pink;
    	background-color: $light-graphite;
    	border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	color: $neon-pink;
+}
+
+h4 {
+	color: $neon-blue;
 }
 
 
@@ -223,7 +232,7 @@ footer {
 
 #name {
 	font-family: $title-font;
-	font-size: $title-font-size;
+	font-size: 2em;
 	font-weight: bold;
 	color: #fff;
 }
@@ -292,7 +301,7 @@ footer {
 #blog_header {
 	font-family: $title-font;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.75em;
 	color: #fff;
 }
 
@@ -330,6 +339,7 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
         text-align: center;
+        font-size: smaller;
     }
 
     .section_content {

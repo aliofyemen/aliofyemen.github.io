@@ -59,9 +59,10 @@ a:active {
 
 blockquote {
   margin-top: 0;
+  padding-left: 2%;
   text-align: justify;
   text-justify: inter-word;
-  padding-left: 2%;
+  font-size: larger;
   border-left: 2.5px solid #66D9EF; }
 
 code, mark {
@@ -88,6 +89,12 @@ footer {
   color: #F92672;
   background-color: #272822;
   border-top: 2px solid rgba(0, 0, 0, 0.2); }
+
+h1 {
+  color: #F92672; }
+
+h4 {
+  color: #66D9EF; }
 
 /* 
 	ANIMATIONS
@@ -157,7 +164,7 @@ footer {
 
 #name {
   font-family: "Bungee Shade", cursive;
-  font-size: xx-large;
+  font-size: 2em;
   font-weight: bold;
   color: #fff; }
 
@@ -216,7 +223,7 @@ footer {
 #blog_header {
   font-family: "Bungee Shade", cursive;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.75em;
   color: #fff; }
 
 #blog_date {
@@ -246,7 +253,8 @@ footer {
   blockquote {
     margin-left: 10px;
     margin-right: 10px;
-    text-align: center; }
+    text-align: center;
+    font-size: smaller; }
 
   .section_content {
     padding: 0; }
