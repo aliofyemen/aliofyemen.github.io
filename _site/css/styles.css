@@ -171,6 +171,9 @@ h4, h5, h6 {
 .center_text {
   text-align: center; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 #name {
   font-family: "Bungee Shade", cursive;
   font-size: 2em;
