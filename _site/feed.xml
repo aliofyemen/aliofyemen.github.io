@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-02-01T02:33:24-05:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Ali Morshid | Software Engineer</title><subtitle>Personal website of an aspiring software engineer.</subtitle><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2018/01/25/testing-blog.html" rel="alternate" type="text/html" title="Testing Blog" /><published>2018-01-25T00:00:00-05:00</published><updated>2018-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2018/01/25/testing-blog</id><content type="html" xml:base="http://0.0.0.0:4000/2018/01/25/testing-blog.html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-02-02T23:35:06-05:00</updated><id>http://0.0.0.0:4000/</id><title type="html">Ali Morshid | Software Engineer</title><subtitle>Personal website of an aspiring software engineer.</subtitle><entry><title type="html">RFID-Operated Door Lock</title><link href="http://0.0.0.0:4000/2018/02/02/rfid-operated-door-lock.html" rel="alternate" type="text/html" title="RFID-Operated Door Lock" /><published>2018-02-02T00:00:00-05:00</published><updated>2018-02-02T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2018/02/02/rfid-operated-door-lock</id><content type="html" xml:base="http://0.0.0.0:4000/2018/02/02/rfid-operated-door-lock.html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost, it is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won’t have a pickable lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner/reader to scan an RFID tag or card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock. This system is a perfect example of a Real-Time Embedded System because it needs to operate in Real-Time (it listens indefinitely to events and responds to them within a strictly defined time -or deadline) and it is an Embedded System because it solves a very specific problem and its purpose is not easily changed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;what-you-will-need&quot;&gt;What You Will Need&lt;/h1&gt;
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware:&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-arduino-uno&quot;&gt;1. Arduino Uno&lt;/h4&gt;
+&lt;p&gt;The project is mainly powered by an Arduino Uno that acts as the brain of the project, the Arduino Uno handles all connections from the various parts used in the system and also contains the code to make them work together.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-rfid-rc522-with-rfid-tag-or-card&quot;&gt;2. RFID-RC522 (with RFID tag or card)&lt;/h4&gt;
+&lt;p&gt;The RC522 is an RFID scanner/reader that will act as the “authenticator” of the user, the user will introduce the RFID card or tag on the sensor (within 2 inches) and it will determine if they are authorized to open the lock or otherwise.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-16x2-liquid-crystal-display-module-hd44780&quot;&gt;3. 16x2 Liquid Crystal Display Module (HD44780)&lt;/h4&gt;
+&lt;p&gt;The LCD is used to display to the user a welcome message that instructs them to “Scan their card”, the message changes when the user authenticates themselves and it prints out “Access Granted” or “Access Denied” depending on the situation. The LCD basically acts as the User Interface of the project along with the RFID scanner/reader.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-servo-motor-sg90&quot;&gt;4. Servo Motor (SG90)&lt;/h4&gt;
+&lt;p&gt;The servo motor is controlled by the Arduino Uno to lock or unlock the door based on the authentication process provided by the RFID scanner/reader.&lt;/p&gt;
+
+&lt;h4 id=&quot;5-breadboard&quot;&gt;5. Breadboard&lt;/h4&gt;
+&lt;p&gt;The breadboard acts as an intermediary for all the parts and helps them work together.&lt;/p&gt;
+
+&lt;h4 id=&quot;6-male-to-male-jumper-wires-30-of-them&quot;&gt;6. Male-to-male Jumper Wires (30 of them)&lt;/h4&gt;
+&lt;p&gt;These will be used to connect the hardware parts together.&lt;/p&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software:&lt;/h3&gt;
+
+&lt;p&gt;For the software part of things, you would need to download the following:&lt;/p&gt;
+&lt;h4 id=&quot;1-arduino-ide&quot;&gt;1. &lt;a href=&quot;https://www.arduino.cc/en/Main/Software&quot;&gt;Arduino IDE&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;2-source-code&quot;&gt;2. &lt;a href=&quot;https://github.com/aliofye/rfid-door-lock&quot;&gt;Source Code&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Still here? I commend your perseverance. In that case, I would like to challenge you to finish the next part! Feel free to email &lt;a href=&quot;mailto:alimorsh@buffalo.edu&quot;&gt;me&lt;/a&gt; if you have any questions along the way.&lt;/p&gt;
+
+&lt;h1 id=&quot;putting-it-all-together&quot;&gt;Putting it All Together&lt;/h1&gt;
+
+&lt;h3 id=&quot;hardware-1&quot;&gt;Hardware:&lt;/h3&gt;
+
+&lt;p&gt;If your inclinations lie in the software realm, you might find this part quite intimidating - as did I - so just take it slow and follow my lead :)&lt;/p&gt;
+
+&lt;h4 id=&quot;1-place-the-arduino-uno-rfid-rc522-chip-16x2-lcd-servo-motor-and-breadboard-on-a-clean-and-spacious-surface-such-as-a-table&quot;&gt;1. Place the Arduino Uno, RFID-RC522 chip, 16x2 LCD, Servo motor, and breadboard on a clean and spacious surface such as a table.&lt;/h4&gt;
+
+&lt;h4 id=&quot;2-pick-up-the-male-to-male-jumper-wires-and-start-connecting-parts-in-the-following-format&quot;&gt;2. Pick up the male-to-male jumper wires and start connecting parts in the following format:&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SOURCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DESTINATION&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pin&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pin&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Introduction The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost, it is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won’t have a pickable lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner/reader to scan an RFID tag or card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock. This system is a perfect example of a Real-Time Embedded System because it needs to operate in Real-Time (it listens indefinitely to events and responds to them within a strictly defined time -or deadline) and it is an Embedded System because it solves a very specific problem and its purpose is not easily changed.</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2018/01/25/testing-blog.html" rel="alternate" type="text/html" title="Testing Blog" /><published>2018-01-25T00:00:00-05:00</published><updated>2018-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2018/01/25/testing-blog</id><content type="html" xml:base="http://0.0.0.0:4000/2018/01/25/testing-blog.html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -10,53 +58,5 @@
 		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2018/01/25/testing-blog-(3rd-copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2018-01-25T00:00:00-05:00</published><updated>2018-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2018/01/25/testing-blog%20(3rd%20copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2018/01/25/testing-blog-(3rd-copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2017/01/25/testing-blog-(6th-copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2017-01-25T00:00:00-05:00</published><updated>2017-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2017/01/25/testing-blog%20(6th%20copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2017/01/25/testing-blog-(6th-copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2017/01/25/testing-blog-(5th-copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2017-01-25T00:00:00-05:00</published><updated>2017-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2017/01/25/testing-blog%20(5th%20copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2017/01/25/testing-blog-(5th-copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2017/01/25/testing-blog-(4th-copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2017-01-25T00:00:00-05:00</published><updated>2017-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2017/01/25/testing-blog%20(4th%20copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2017/01/25/testing-blog-(4th-copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2016/01/25/testing-blog-(copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2016-01-25T00:00:00-05:00</published><updated>2016-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2016/01/25/testing-blog%20(copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2016/01/25/testing-blog-(copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry><entry><title type="html">Testing Blog</title><link href="http://0.0.0.0:4000/2016/01/25/testing-blog-(another-copy).html" rel="alternate" type="text/html" title="Testing Blog" /><published>2016-01-25T00:00:00-05:00</published><updated>2016-01-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2016/01/25/testing-blog%20(another%20copy)</id><content type="html" xml:base="http://0.0.0.0:4000/2016/01/25/testing-blog-(another-copy).html">&lt;p&gt;This is just dummy content to test the blog capabilities of the site. For instance, we can add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; tags like so. We can also add &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; blocks like the following:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dummy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;c1&quot;&gt;//dummy constructor&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Very powerfull features indeed, gotta love Jekyll.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is just dummy content to test the blog capabilities of the site. For instance, we can add code tags like so. We can also add code blocks like the following:</summary></entry></feed>

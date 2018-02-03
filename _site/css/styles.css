@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  background-color: #272822;
+  background-color: #242620;
   font-family: "Zilla Slab", serif;
   font-size: x-large;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
@@ -30,6 +30,18 @@ body {
   color: black;
   background-color: #FD971F; }
 
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-thumb, ::-webkit-resizer {
+  background: #F92672; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #66D9EF; }
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner {
+  background: #242620; }
+
 /* 
 	ELEMENTS
  */
@@ -37,10 +49,12 @@ a {
   color: #A6E22E;
   text-decoration: none; }
 
-a::hover {
-  color: #fff; }
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #F92672; }
 
-a::active {
+a:active {
   color: #FD971F; }
 
 blockquote {
@@ -51,17 +65,18 @@ blockquote {
   border-left: 2.5px solid #66D9EF; }
 
 code, mark {
+  padding: 0;
   color: #000;
   background-color: #A6E22E; }
 
 pre > code {
   display: block;
   overflow: scroll;
-  padding: 10px;
+  padding: 0;
   font-size: 100%;
   color: #fff;
   background-color: #272822;
-  border: 1px solid #fff; }
+  box-shadow: 1px 1px 1px #fff; }
 
 footer {
   position: end;
@@ -71,7 +86,7 @@ footer {
   font-family: "Bungee Shade", cursive;
   font-weight: bold;
   color: #F92672;
-  background-color: #242620;
+  background-color: #272822;
   border-top: 2px solid rgba(0, 0, 0, 0.2); }
 
 /* 
@@ -195,6 +210,13 @@ footer {
   position: relative; }
 
 #blog_title {
+  font-size: 1.5em;
+  color: #fff; }
+
+#blog_header {
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold;
+  font-size: 2em;
   color: #fff; }
 
 #blog_date {
@@ -247,6 +269,7 @@ footer {
     padding-right: 5%; }
 
   pre > code {
+    overflow: scroll;
     padding: 1%;
     font-size: medium; }
 

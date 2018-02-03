@@ -2,12 +2,12 @@
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h3 class="section_title">{{ currentdate }}</h3>
+    <h3 class="section_title center_text">{{ currentdate }}</h3>
     <ul>
     {% assign date = currentdate %}
   {% endif %}
     <p>
-    	<a id="blog_title" href="{{ post.url }}">{{ post.title }}</a> 
+    	<a id="blog_title" href="{{ post.url }}">{{ post.title }}</a><br>
     	<span id="blog_date">{{ post.date | date: "%-m/%-d/%Y" }}</span><br>
     </p>
   {% if forloop.last %}</ul>{% endif %}

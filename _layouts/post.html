@@ -2,5 +2,8 @@
 layout: default
 ---
 <div class="post_style">
+<span id="blog_header">{{ page.title }}</span><br>
+<span id="blog_date">{{ page.date | date: '%B %d, %Y' }}</span><br>
+<span id="blog_date"> Authored by Ali Morshid</span>
 {{ content }}
 </div>

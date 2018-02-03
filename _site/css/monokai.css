@@ -68,4 +68,10 @@
 .highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .highlight .vm { color: #f8f8f2 } /* Name.Variable.Magic */
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
-.highlight .gl { padding-right: 10px; color: gray} /* line numbers */
+.highlight .gl {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: gray;
+	background-color: #242620;
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+}

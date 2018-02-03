@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Ali Morshid | Software Engineer</title>
+<link rel="icon" type="image/png" href="" hreflang="en-us">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Outline|Zilla+Slab:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css" hreflang="en-us">
+
+</head>
+<body>
+	
+	<nav>
+		<a href="/index.html" class="section_subtitle">home</a>
+		<small id="bars" class="section_subtitle"> || </small> 
+		<a href="/blog.html" class="section_subtitle">blog</a>
+	</nav>
+	<br>
+	
+	<div class="post_style">
+<span id="blog_header">RFID-Operated Door Lock</span><br>
+<span id="blog_date">February 02, 2018</span><br>
+<span id="blog_date"> Authored by Ali Morshid</span>
+<h1 id="introduction">Introduction</h1>
+<blockquote>
+  <p>The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost, it is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won’t have a pickable lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner/reader to scan an RFID tag or card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock. This system is a perfect example of a Real-Time Embedded System because it needs to operate in Real-Time (it listens indefinitely to events and responds to them within a strictly defined time -or deadline) and it is an Embedded System because it solves a very specific problem and its purpose is not easily changed.</p>
+</blockquote>
+
+<h1 id="what-you-will-need">What You Will Need</h1>
+<h3 id="hardware">Hardware:</h3>
+
+<h4 id="1-arduino-uno">1. Arduino Uno</h4>
+<p>The project is mainly powered by an Arduino Uno that acts as the brain of the project, the Arduino Uno handles all connections from the various parts used in the system and also contains the code to make them work together.</p>
+
+<h4 id="2-rfid-rc522-with-rfid-tag-or-card">2. RFID-RC522 (with RFID tag or card)</h4>
+<p>The RC522 is an RFID scanner/reader that will act as the “authenticator” of the user, the user will introduce the RFID card or tag on the sensor (within 2 inches) and it will determine if they are authorized to open the lock or otherwise.</p>
+
+<h4 id="3-16x2-liquid-crystal-display-module-hd44780">3. 16x2 Liquid Crystal Display Module (HD44780)</h4>
+<p>The LCD is used to display to the user a welcome message that instructs them to “Scan their card”, the message changes when the user authenticates themselves and it prints out “Access Granted” or “Access Denied” depending on the situation. The LCD basically acts as the User Interface of the project along with the RFID scanner/reader.</p>
+
+<h4 id="4-servo-motor-sg90">4. Servo Motor (SG90)</h4>
+<p>The servo motor is controlled by the Arduino Uno to lock or unlock the door based on the authentication process provided by the RFID scanner/reader.</p>
+
+<h4 id="5-breadboard">5. Breadboard</h4>
+<p>The breadboard acts as an intermediary for all the parts and helps them work together.</p>
+
+<h4 id="6-male-to-male-jumper-wires-30-of-them">6. Male-to-male Jumper Wires (30 of them)</h4>
+<p>These will be used to connect the hardware parts together.</p>
+
+<h3 id="software">Software:</h3>
+
+<p>For the software part of things, you would need to download the following:</p>
+<h4 id="1-arduino-ide">1. <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a></h4>
+<h4 id="2-source-code">2. <a href="https://github.com/aliofye/rfid-door-lock">Source Code</a></h4>
+
+<p>Still here? I commend your perseverance. In that case, I would like to challenge you to finish the next part! Feel free to email <a href="mailto:alimorsh@buffalo.edu">me</a> if you have any questions along the way.</p>
+
+<h1 id="putting-it-all-together">Putting it All Together</h1>
+
+<h3 id="hardware-1">Hardware:</h3>
+
+<p>If your inclinations lie in the software realm, you might find this part quite intimidating - as did I - so just take it slow and follow my lead :)</p>
+
+<h4 id="1-place-the-arduino-uno-rfid-rc522-chip-16x2-lcd-servo-motor-and-breadboard-on-a-clean-and-spacious-surface-such-as-a-table">1. Place the Arduino Uno, RFID-RC522 chip, 16x2 LCD, Servo motor, and breadboard on a clean and spacious surface such as a table.</h4>
+
+<h4 id="2-pick-up-the-male-to-male-jumper-wires-and-start-connecting-parts-in-the-following-format">2. Pick up the male-to-male jumper wires and start connecting parts in the following format:</h4>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="p">[</span><span class="n">SOURCE</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">DESTINATION</span><span class="p">]</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="p">[</span><span class="n">pin</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="n">pin</span> <span class="mi">2</span><span class="p">]</span></pre></td></tr></tbody></table></code></pre></figure>
+
+
+</div>
+</body>
+<footer>
+  <div>
+  	Made with love using the finest ingredients. <br>
+	<a href="mailto:alimorsh@buffalo.edu" target="_top">
+	<small class="bounce">contact</small>
+	</a>
+	<span> || </span>
+	<a href="/credits.html">
+	<small class="bounce">credits</small>
+	</a>
+	<br>
+  	<small id="copyright">&copy;2018 ALI MORSHID</small>
+  	<div>
+  		<img src="/img/g.svg" />
+  		<img src="/img/t.svg" />
+  		<img src="/img/i.svg" />
+  	</div>
+  </div>
+</footer>
+</html>
