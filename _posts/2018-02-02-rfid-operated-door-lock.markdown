@@ -4,7 +4,7 @@ layout: post
 ---
 
 # Introduction
-> The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost, it is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won't have a pickable lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner/reader to scan an RFID tag or card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock. This system is a perfect example of a Real-Time Embedded System because it needs to operate in Real-Time (it listens indefinitely to events and responds to them within a strictly defined time -or deadline) and it is an Embedded System because it solves a very specific problem and its purpose is not easily changed.
+> The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost. It is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won't have a pick-able lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner to read an RFID card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock.
 
 # What You Will Need
 ### Hardware:
@@ -30,8 +30,8 @@ These will be used to connect the hardware parts together.
 ### Software:
 
 For the software part of things, you would need to download the following:
-#### 1. [Arduino IDE][1] 
-#### 2. [Source Code][2]
+#### 1. The [Arduino IDE][1] to program the Arduino Uno
+#### 2. The [source code][2] for our program logic
 
 Still here? I commend your perseverance. In that case, I would like to challenge you to finish the next part! Feel free to email [me][email] if you have any questions along the way.
 
