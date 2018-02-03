@@ -51,11 +51,6 @@ If your inclinations lie in the software realm, you might find this part quite i
 {% highlight c++ linenos %}
 {% raw %}
 [SOURCE] -> [DESTINATION]
-{% endraw %}
-{% endhighlight %}
-
-{% highlight c++ linenos %}
-{% raw %}
 [pin 1] -> [pin 2]
 {% endraw %}
 {% endhighlight %}
