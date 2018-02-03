@@ -11,9 +11,26 @@
     		<div class="card_description center_text">
       		{{ project.description }}
     		</div>
+        <div class="card_links center_text">
+          {% if project.code == "private" %}
+              <small>Currently Private</small>
+          {% else %}
+            <a href="{{ project.code }}">
+              <img class="img_links" src="{{ site.baseurl }}/img/g.svg" />
+            </a>
+          {% endif %}
+        </div>
     	</div>
     	{% endfor %}
     </div>
-
+  </div>
+  <div class=" adding_projects center_text"> 
+    <div class="loading">
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+    </div>
+    In the process of adding all my projects, stay tuned.
   </div>
 </section>

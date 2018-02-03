@@ -7,7 +7,7 @@ layout: post
 > The RFID-Operated Door Lock is a system designed to replace traditional door locks for a relatively cheap cost. It is very useful as it can be used to make any door “smart” and effectively remove the hassle of using keys to open doors (i.e jamming keys, dropping them while holding groceries, etc) and it’s generally more secure as you won't have a pick-able lock that can be easily broken into (most petty thieves do not have the technical knowledge to hack an RFID-operated door lock.) The way the RFID-Operated Door Lock will work is by using an RFID scanner to read an RFID card that will authenticate the user and unlock/lock accordingly. This system will be very helpful to anyone who wants a more secure and reliable door lock.
 
 # What You Will Need
-### Hardware:
+## Hardware
 
 #### 1. Arduino Uno
 The project is mainly powered by an Arduino Uno that acts as the brain of the project, the Arduino Uno handles all connections from the various parts used in the system and also contains the code to make them work together.
@@ -27,18 +27,20 @@ The breadboard acts as an intermediary for all the parts and helps them work tog
 #### 6. Male-to-male Jumper Wires (30 of them)
 These will be used to connect the hardware parts together.
 
-### Software:
+## Software
 
 For the software part of things, you would need to download the following:
-#### 1. The [Arduino IDE][1] to program the Arduino Uno
-#### 2. The [source code][2] for our program logic
+#### 1. Arduino IDE [[link]][1]
+To program the Arduino Uno.
+#### 2. Source code [[link]][2] 
+For our program logic.
 
 Still here? I commend your perseverance. In that case, I would like to challenge you to finish the next part! Feel free to email [me][email] if you have any questions along the way.
 
 # Putting it All Together
 
 
-### Hardware:
+## Hardware
 
 If your inclinations lie in the software realm, you might find this part quite intimidating - as did I - so just take it slow and follow my lead :)
 
