@@ -30,3 +30,12 @@
     - item: JavaScript
     - item: HTML
     - item: CSS
+    
+- title: ENCRYPT.ASM
+  url: blablabla
+  code: https://github.com/aliofye/encrypt.asm
+  icon: /img/webpage.png
+  description: A message encryption program written in assembly for the MIPS architecture.
+  tech:
+    - item: MIPS
+    - item: Assembly

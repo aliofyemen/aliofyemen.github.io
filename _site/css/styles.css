@@ -67,9 +67,9 @@ blockquote {
   border-left: 2.5px solid #66D9EF; }
 
 code, mark {
-  padding: 0;
-  color: #000;
-  background-color: #A6E22E; }
+  padding: 5px;
+  color: #fff;
+  background-color: #383428; }
 
 pre > code {
   display: block;
