@@ -285,7 +285,7 @@ h2:before {
   blockquote {
     margin-left: 10px;
     margin-right: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 1em; }
 
   .section_content {
