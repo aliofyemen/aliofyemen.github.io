@@ -1,20 +1,14 @@
 <footer>
   <div>
-  	<strong>Made with love using the finest ingredients.</strong> <br>
-	<a href="mailto:alimorsh@buffalo.edu" target="_top">
-	<small class="bounce">contact</small>
-	</a>
-	<span> || </span>
-	<a href="{{ site.baseurl }}/credits.html">
-	<small class="bounce">credits</small>
-	</a>
-	<br>
-  	<small id="copyright">&copy;{{ 'now' | date: "%Y" }} ALI MORSHID</small>
+  	<strong>Made with love using the finest 
+      <a href="{{ site.baseurl }}/credits.html">ingredients</a>
+    </strong> <br>	
+    <small id="copyright">&copy;{{ 'now' | date: "%Y" }} ALI MORSHID</small>
   	{% if jekyll.environment == "development" %}
     <div>
-  		<img src="{{ site.baseurl }}/img/g.svg" />
-  		<img src="{{ site.baseurl }}/img/t.svg" />
-  		<img src="{{ site.baseurl }}/img/i.svg" />
+  		<a href="mailto:alimorsh@buffalo.edu"><img src="{{ site.baseurl }}/img/m.svg" /></a>
+      <a href="https://www.github.com/aliofye"><img src="{{ site.baseurl }}/img/g.svg" /></a>
+  		<a href="https://www.twitter.com/aliofye"><img src="{{ site.baseurl }}/img/t.svg" /></a>
   	</div>
     {% endif %}
   </div>
