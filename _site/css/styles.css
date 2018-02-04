@@ -68,6 +68,8 @@ blockquote {
 
 code, mark {
   padding: 5px;
+  font-family: monospace;
+  font-size: x-large;
   color: #fff;
   background-color: #383428; }
 
@@ -75,7 +77,6 @@ pre > code {
   display: block;
   overflow: scroll;
   padding: 0;
-  font-size: 100%;
   color: #fff;
   background-color: #383428;
   box-shadow: 3px 3px 3px #000; }
@@ -102,9 +103,6 @@ h2, h3 {
 
 h2:before {
   content: "> "; }
-
-h4, h5, h6 {
-  color: #FD971F; }
 
 /* 
 	ANIMATIONS

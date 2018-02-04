@@ -29,10 +29,13 @@ $primary-font: 'Zilla Slab', serif;
 $title-font: 'Bungee Shade', cursive;
 $subtitle-font: 'Bungee Shade', cursive;
 $header-font: 'Bungee Outline', cursive;
+$code-font: monospace;
+
 
 $primary-font-size: x-large;
 $title-font-size: xx-large;
 $subtitle-font-size: x-large;
+$code-font-size: x-large;
 
 $text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 
@@ -115,6 +118,8 @@ blockquote {
 
 code, mark { 
 	padding: 5px;
+	font-family: $code-font;
+	font-size: $code-font-size;
 	color: $snow;
 	background-color: $lighter-graphite;
 }
@@ -123,7 +128,6 @@ pre > code {
 	display: block;
 	overflow: scroll;
 	padding: 0;
-	font-size: 100%;
 	color: $snow;
 	background-color: $lighter-graphite; 
 	box-shadow: 3px 3px 3px $abyss;
@@ -157,9 +161,6 @@ h2:before {
 	content: "> "
 }
 
-h4, h5, h6 {
-	color: $neon-orange;
-}
 
 
 
