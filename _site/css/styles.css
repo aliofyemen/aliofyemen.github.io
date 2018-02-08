@@ -52,11 +52,20 @@ a {
 
 a:hover {
   color: #fff;
-  text-decoration: underline;
-  text-decoration-color: #F92672; }
+  border-bottom: 3px solid #F92672; }
 
 a:active {
   color: #FD971F; }
+
+blockquote > a, p > a, h4 > a {
+  color: #fff;
+  border-bottom: 3px solid #F92672;
+  text-decoration: none; }
+
+blockquote > a:hover, p > a:hover, h4 > a:hover {
+  animation: highlight 0.3s;
+  animation-fill-mode: forwards;
+  text-decoration: none; }
 
 blockquote {
   margin-top: 0;
@@ -132,6 +141,10 @@ h2:before {
     top: -0.2em; }
   100% {
     top: 0; } }
+@keyframes highlight {
+  100% {
+    color: #000;
+    background: #F92672; } }
 /* 
 	SECTION 
 */
@@ -250,8 +263,7 @@ h2:before {
   position: relative; }
 
 #blog_title {
-  font-size: 1.5em;
-  color: #fff; }
+  font-size: 1.5em; }
 
 #blog_header {
   font-family: "Bungee Shade", cursive;

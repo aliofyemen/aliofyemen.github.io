@@ -30,9 +30,9 @@ These will be used to connect the hardware parts together.
 ## Software
 
 For the software part of things, you would need to download the following:
-#### 1. Arduino IDE [[link]][1]
+#### 1. [Arduino IDE][1]
 To program the Arduino Uno.
-#### 2. Source code [[link]][2] 
+#### 2. [Source Code][2] 
 For our program logic.
 
 Still here? I commend your perseverance. In that case, I would like to challenge you to finish the next part! Feel free to email [me][email] if you have any questions along the way.

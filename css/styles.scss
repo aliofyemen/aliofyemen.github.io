@@ -99,12 +99,23 @@ a {
 
 a:hover {
   		color: $snow;
-  		text-decoration: underline;
-    	text-decoration-color: $neon-pink;
+  		border-bottom: 3px solid $neon-pink;
 }
 
 a:active {
 	color: $neon-orange;
+}
+
+blockquote > a, p > a, h4 > a {
+	color: $snow;
+	border-bottom: 3px solid $neon-pink;
+	text-decoration: none;
+}
+
+blockquote > a:hover, p > a:hover, h4 > a:hover {
+	animation: highlight 0.3s;
+	animation-fill-mode: forwards;
+	text-decoration: none;
 }
 
 blockquote {
@@ -197,6 +208,16 @@ h2:before {
     0% { top: 0; }
     50% { top: -0.2em; }
     100% { top: 0; }
+}
+
+@keyframes highlight {
+ 	0% {
+
+ 	}
+ 	100% {
+ 		color: $abyss;
+ 		background: $neon-pink;	
+ 	}
 }
 
 
@@ -341,7 +362,6 @@ h2:before {
 
 #blog_title {
 	font-size: 1.5em;
-	color: $snow;
 }
 
 #blog_header {
