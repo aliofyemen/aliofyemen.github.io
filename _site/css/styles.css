@@ -221,11 +221,12 @@ h2:before {
 .card_header {
   overflow: hidden;
   font-family: "Bungee Outline", cursive;
-  color: #66D9EF; }
+  color: #66D9EF;
+  flex-grow: 1; }
 
 .card_description {
   overflow: hidden;
-  flex-grow: 1; }
+  flex-grow: 2; }
 
 .card_links {
   width: 100%;
@@ -235,7 +236,8 @@ h2:before {
   align-items: center;
   background-color: #383428;
   border-radius: 10px;
-  box-shadow: inset 0 0 5px #000, 0 1px 1px rgba(255, 255, 255, 0.1); }
+  box-shadow: inset 0 0 5px #000, 0 1px 1px rgba(255, 255, 255, 0.1);
+  flex-grow: 0; }
 
 .img_links {
   display: inline-block;
