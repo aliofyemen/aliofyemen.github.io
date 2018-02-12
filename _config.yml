@@ -14,3 +14,4 @@ resume: https://docs.google.com/document/d/1eHqHSC6qZx8mHQCzfY2F-kwUuQlxYL5ShL7O
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-minifier
