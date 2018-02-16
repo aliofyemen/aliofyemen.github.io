@@ -9,7 +9,9 @@ baseurl: ""
 twitter_username: aliofye
 github_username:  aliofye
 resume: https://docs.google.com/document/d/1eHqHSC6qZx8mHQCzfY2F-kwUuQlxYL5ShL7OXlrt4eQ/edit?usp=sharing
-theme: minima
+sass:
+    sass_dir: _sass
+
 # Build settings
 markdown: kramdown
 plugins:
