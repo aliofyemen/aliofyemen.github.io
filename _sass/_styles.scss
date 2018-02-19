@@ -370,6 +370,15 @@ h2:before {
 	color: $snow;
 }
 
+#blog_tag {
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	font-size: medium;
+	color: $abyss;
+	background-color: $neon-pink;
+	box-shadow: 3px 3px 3px $abyss;
+}
+
 #blog_date {
 	font-size: x-large;
 	color: gray;

@@ -1,6 +1,7 @@
 ---
-title: RFID-Operated Door Lock
+title: "RFID-Operated Door Lock"
 layout: post
+tags: how-to
 ---
 
 # Introduction
