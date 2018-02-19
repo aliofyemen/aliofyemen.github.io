@@ -12,11 +12,20 @@
       		{{ project.description }}
     		</div>
         <div class="card_links center_text">
+          <!-- github link -->
           {% if project.code == "private" %}
               <small>Currently Private</small>
           {% else %}
             <a href="{{ project.code }}">
               <img class="img_links" src="{{ site.baseurl }}/img/g.svg" />
+            </a>
+          {% endif %}
+          <!-- blog post link -->
+          {% if project.url == "none" %}
+              <!-- do nothing -->
+          {% else %}
+            <a href="{{ project.url }}">
+              <img class="img_links" src="{{ site.baseurl }}/img/b.svg" />
             </a>
           {% endif %}
         </div>
