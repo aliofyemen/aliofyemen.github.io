@@ -134,6 +134,9 @@ code, mark {
 
 pre > code {
 	display: block;
+	margin-left:-30px;
+	margin-right:-30px;
+	padding:0;
 	overflow: scroll;
 	padding: 0;
 	color: $snow;
