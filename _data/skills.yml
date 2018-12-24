@@ -5,16 +5,14 @@
     - item: JavaScript
     - item: Python
     - item: SQL
-    - item: HTML
-    - item: CSS
-    - item: SASS
-    - item: YAML
-    - item: JSON
-
+    - item: Swift/Objective C
 
 - category: Frameworks
   list:
     - item: Android
+    - item: iOS
+    - item: Node
+    - item: React
     - item: Jekyll
     - item: Arduino
 
@@ -29,12 +27,12 @@
 - category: IDEs
   list:
     - item: Android Studio
+    - item: XCode
     - item: IntelliJ IDEA
     - item: Visual Studio
-    - item: NetBeans
 
 - category: Platforms
   list:
-    - item: Linux (Main)
+    - item: macOS (Main)
+    - item: Linux
     - item: Windows
-    - item: macOS

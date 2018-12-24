@@ -4,7 +4,7 @@
   icon: /img/android.png
   description: A beautifully designed all in one solution for your reading needs.
   tech:
-    - item: Android Framework
+    - item: Android
     - item: Java
     - item: JSON
     - item: Realm
