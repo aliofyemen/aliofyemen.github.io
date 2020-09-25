@@ -169,7 +169,7 @@ For the software part, all you have to do is navigate to the repository you clon
 Everything should work now, feel free to email [me][email] if you have any questions! Thanks for taking the time to read this tutorial!
 
 
-[email]: mailto:alimorsh@buffalo.edu
+[email]: mailto:aliofye@gmail.com
 [1]: https://www.arduino.cc/en/Main/Software
 [2]: https://github.com/aliofye/rfid-door-lock
 [3]: https://www.youtube.com/watch?v=uzxw1yl1s_M
